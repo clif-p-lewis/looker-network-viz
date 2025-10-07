@@ -1,16 +1,16 @@
 {
   "dataStudio": {
-    "name": "Force-Directed Network (D3) — Flexible Edition",
-    "logoUrl": "https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-action.svg",
-    "organization": "Your Org or Name",
-    "description": "An interactive force-directed network graph for Looker Studio with optional extra metrics and dimensions.",
-    "supportUrl": "https://d3js.org/",
-    "privacyPolicyUrl": "https://your-domain.example/privacy"
+    "name": "Force-Directed Network (D3)",
+    "logoUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    "organization": "LBVC",
+    "description": "Interactive force-directed network graph for Looker Studio with optional extra metrics and dimensions.",
+    "supportUrl": "https://lbvc.co.za/#contact",
+    "privacyPolicyUrl": "https://www.lbvc.co.za/data-policy"
   },
   "components": [
     {
       "id": "force_network",
-      "title": "Force Network Graph",
+      "title": "Force-Directed Network (D3)",
       "description": "Force-directed graph with metric-driven node and edge styling.",
       "resource": "index.js",
       "reportBuilderCompatible": true,
