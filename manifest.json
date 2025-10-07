@@ -1,0 +1,203 @@
+{
+  "dataStudio": {
+    "name": "Force-Directed Network (D3) — Flexible Edition",
+    "logoUrl": "https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-action.svg",
+    "organization": "Your Org or Name",
+    "description": "An interactive force-directed network graph for Looker Studio with optional extra metrics and dimensions.",
+    "supportUrl": "https://d3js.org/",
+    "privacyPolicyUrl": "https://your-domain.example/privacy"
+  },
+  "components": [
+    {
+      "id": "force_network",
+      "title": "Force Network Graph",
+      "description": "Force-directed graph with metric-driven node and edge styling.",
+      "resource": "index.js",
+      "reportBuilderCompatible": true,
+      "fields": {
+        "dimensions": [
+          {
+            "id": "source",
+            "name": "Source Node",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "id": "target",
+            "name": "Target Node",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 1,
+            "max": 1
+          },
+          {
+            "id": "group",
+            "name": "Node Group (optional)",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraDim1",
+            "name": "Extra Dimension 1 (optional)",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraDim2",
+            "name": "Extra Dimension 2 (optional)",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraDim3",
+            "name": "Extra Dimension 3 (optional)",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraDim4",
+            "name": "Extra Dimension 4 (optional)",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraDim5",
+            "name": "Extra Dimension 5 (optional)",
+            "type": "TEXT",
+            "concept": "DIMENSION",
+            "min": 0,
+            "max": 1
+          }
+        ],
+        "metrics": [
+          {
+            "id": "edgeWeight",
+            "name": "Edge Weight (optional)",
+            "type": "NUMBER",
+            "concept": "METRIC",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "nodeValue",
+            "name": "Node Value (optional)",
+            "type": "NUMBER",
+            "concept": "METRIC",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraMetric1",
+            "name": "Extra Metric 1 (optional)",
+            "type": "NUMBER",
+            "concept": "METRIC",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraMetric2",
+            "name": "Extra Metric 2 (optional)",
+            "type": "NUMBER",
+            "concept": "METRIC",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraMetric3",
+            "name": "Extra Metric 3 (optional)",
+            "type": "NUMBER",
+            "concept": "METRIC",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraMetric4",
+            "name": "Extra Metric 4 (optional)",
+            "type": "NUMBER",
+            "concept": "METRIC",
+            "min": 0,
+            "max": 1
+          },
+          {
+            "id": "extraMetric5",
+            "name": "Extra Metric 5 (optional)",
+            "type": "NUMBER",
+            "concept": "METRIC",
+            "min": 0,
+            "max": 1
+          }
+        ]
+      },
+      "style": {
+        "nodeColorScale": {
+          "id": "nodeColorScale",
+          "label": "Node color palette",
+          "type": "COLOR_PALETTE"
+        },
+        "linkColor": {
+          "id": "linkColor",
+          "label": "Default link color",
+          "type": "FILL_COLOR",
+          "defaultValue": "#999999"
+        },
+        "nodeSizeMin": {
+          "id": "nodeSizeMin",
+          "label": "Min node size",
+          "type": "NUMBER",
+          "defaultValue": 4
+        },
+        "nodeSizeMax": {
+          "id": "nodeSizeMax",
+          "label": "Max node size",
+          "type": "NUMBER",
+          "defaultValue": 26
+        },
+        "linkWidthMin": {
+          "id": "linkWidthMin",
+          "label": "Min link width",
+          "type": "NUMBER",
+          "defaultValue": 0.5
+        },
+        "linkWidthMax": {
+          "id": "linkWidthMax",
+          "label": "Max link width",
+          "type": "NUMBER",
+          "defaultValue": 6
+        },
+        "linkOpacity": {
+          "id": "linkOpacity",
+          "label": "Link opacity",
+          "type": "NUMBER",
+          "defaultValue": 0.35
+        },
+        "charge": {
+          "id": "charge",
+          "label": "Charge (repulsion strength)",
+          "type": "NUMBER",
+          "defaultValue": -180
+        },
+        "linkDistance": {
+          "id": "linkDistance",
+          "label": "Link distance",
+          "type": "NUMBER",
+          "defaultValue": 70
+        }
+      },
+      "options": {
+        "supportsNullData": false
+      }
+    }
+  ]
+}
